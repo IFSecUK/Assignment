@@ -67,7 +67,7 @@ decoded_dictionary = create_decoded_dict(Days_and_their_byteArrays_hash_dict)
 def check_for_secret_key(dict_to_check):
 	for key,value in dict_to_check.items():
 		if b"Our" in value:
-			return "Found the secret value: {}".format(key)
+			return f"Found the secret value: {key} and the decoded message is {value}"
 			break
 		else:
 			continue
